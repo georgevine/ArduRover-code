@@ -20,12 +20,12 @@ bool turnRight = false;
 void setup() {
   Serial.begin(9600);
   //Setup Drive
-  pinMode(12, OUTPUT); //Initiates Motor Channel A pin
-  pinMode(9, OUTPUT); //Initiates Brake Channel A pin
+  pinMode(12, OUTPUT); //Initiates Drive Motor pin
+  pinMode(9, OUTPUT); //Initiates Drive Brake pin
 
   //Setup Steer
-  pinMode(13, OUTPUT); //Initiates Motor Channel A pin
-  pinMode(8, OUTPUT);  //Initiates Brake Channel A pin
+  pinMode(13, OUTPUT); //Initiates Steering Motor pin
+  pinMode(8, OUTPUT);  //Initiates Steering Brake pin
 
   analogWrite(drivePowerPin, LOW);
   analogWrite(steerPowerPin, LOW);
