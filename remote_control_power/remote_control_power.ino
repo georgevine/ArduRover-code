@@ -1,3 +1,7 @@
+//A SIMPLE TEST TO VERIFY THAT IT IS POSSIBLE TO CONTROL THE MOTORS USING COMMANDS
+//SENT OVER A SERIAL CONNECTION
+
+
 //low = back, high = forward
 
 
@@ -38,7 +42,7 @@ void setup() {
 }
 
 void loop(){
-  
+
   if(Serial.available()){
      input = Serial.readString();
   }
@@ -85,4 +89,3 @@ void spinRightMotor(int power, int dir){
   digitalWrite(rightBrakePin, LOW);   //Turn off right brake
   analogWrite(rightPowerPin, power);   //Spins the right motor at full speed
 }
-

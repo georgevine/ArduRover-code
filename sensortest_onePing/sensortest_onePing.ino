@@ -1,4 +1,5 @@
-
+//A SIMPLE TEST TO VERIFY THAT IT IS POSSIBLE TO SEND COMMANDS OVER A SERIAL CONNECTION TO CONTROL
+//AN ULTRASONIC DISTANCE SENSOR
 #include <NewPing.h>
 
 #define TPIN   12 //pin we use to send our ping command
@@ -29,4 +30,3 @@ void loop() {
     blueToothVal = 'x';
   }
 }
-
